@@ -23,6 +23,8 @@ class searchTwoD {
 
         //output
         for (int i = 0; i < rows; i++) {
+            // row wise input
+            System.out.println("Input element of " + i + " row");
             for (int j = 0; j < cols; j++) {
                 System.out.print(numbers[i][j] + " ");
             }
