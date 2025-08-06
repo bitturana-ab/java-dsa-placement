@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 class searchArray {
@@ -16,7 +15,7 @@ class searchArray {
         //search in array
         for (int i = 0; i < numbers.length; i++) {//linear search
             if (numbers[i] == x) {
-                System.out.println(x+ "  is found at index: " + i);
+                System.out.println(x + "  is found at index: " + i);
             }
         }
     }
