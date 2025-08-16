@@ -1,5 +1,7 @@
-class appendLast{
-    public static void main(String args[]){
+
+class appendLast {
+
+    public static void main(String args[]) {
         StringBuilder sb = new StringBuilder("b");
         //append
         sb.append("i");// str = str + "i"; //romba time n memory waste panninga so append try pannu
