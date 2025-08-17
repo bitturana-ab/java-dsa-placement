@@ -6,6 +6,8 @@ class addStrings {
         String firstName = "Bittu";
         String lastName = "Vijay";
         String fullName = firstName + " " + lastName;
+        // String can be added in last and get a new String in memory but can't be modified anywhere
+        fullName += " sanjay";
         System.out.println(fullName);
         // find string length
         // Bittu Vijay inlude space

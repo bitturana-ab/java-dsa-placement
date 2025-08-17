@@ -12,8 +12,11 @@ class TwoD {
 
         int[][] numbers = new int[rows][cols];
         //input
-        // rows 0 = 1st row also for cols
+        // outer loop control rows
+        // rows (0 to rows - 1)
         for (int i = 0; i < rows; i++) {
+            // inner loop control cols
+            // columns element (0 to cols - 1)
             for (int j = 0; j < cols; j++) {
                 System.out.println("Enter element in: " + i + " " + j);
                 numbers[i][j] = sc.nextInt();
