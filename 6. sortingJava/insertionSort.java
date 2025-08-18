@@ -1,22 +1,25 @@
-class insertionSort{
-    public static void main(String args[]){
-        int arr[] = {7,8,3,1,2};
-        //insertion sort
-        for(int i=0; i<arr.length; i++){
+
+public class InsertionSort {
+
+    public static void main(String args[]) {
+        int arr[] = {7, 8, 3, 1, 2};
+
+        // insertion sort
+        for (int i = 0; i < arr.length; i++) {
             int current = arr[i];
-            int j = i-1; //back element (phle ka) 
-            while(j>=0 && current < arr[j]){
-                arr[j+1] = arr[j];
+            int j = i - 1; //back element (phle ka) 
+            while (j >= 0 && current < arr[j]) {
+                arr[j + 1] = arr[j];
                 j--; //decrease pos
             }
-            //placement
-            arr[j+1] = current;
+            // placement
+            arr[j + 1] = current;
 
         }
 
-        //print array
-        for(int i=0; i<arr.length; i++){
-            System.out.print(arr[i]+" ");
+        // print array
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
     }
 }

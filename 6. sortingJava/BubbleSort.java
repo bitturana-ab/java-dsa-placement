@@ -1,5 +1,5 @@
 
-public class bubbleSorting {
+public class BubbleSort {
 
     public static void printArray(int arr[]) {
         for (int i = 0; i < arr.length; i++) {
@@ -16,7 +16,7 @@ public class bubbleSorting {
         // bubble sort
         // time complexity = O(n^2)
         for (int i = 0; i < arr.length - 1; i++) { // n-1
-            for (int j = 0; j < arr.length - i - 1; j++) { // -i means last i th digit elements are sorted
+            for (int j = 0; j < arr.length - 1 - i; j++) { // -i means last i th digit elements are sorted
 
                 if (arr[j] > arr[j + 1]) {
                     // swap
