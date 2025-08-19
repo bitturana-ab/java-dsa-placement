@@ -1,19 +1,19 @@
 
-class fibonacci {
+class Fibonacci {
 
-    public static void printFibo(int a, int b, int n) {
+    private static void printFibbo(int a, int b, int n) {
         if (n == 0) {
             return;
         }
         int c = a + b;
-        System.out.println(c);
-        printFibo(b, c, n - 1);
+        System.out.print(c + " ");
+        printFibbo(b, c, n - 1);
     }
 
     public static void main(String[] args) {
-        System.out.println("0");
-        System.out.println("1");
-        int n = 7;
-        printFibo(0, 1, n - 2);
+        System.out.print("0 ");
+        System.out.print("1 ");
+        int n = 5;
+        printFibbo(0, 1, n);
     }
 }
