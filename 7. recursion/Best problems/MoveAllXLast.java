@@ -1,15 +1,16 @@
 
-public class CountXAndLastAppend {
+public class MoveAllXLast {
 
     private static int countChar = 0;
 
     private static void findXAndAppendLast(String str, char findChar, String newString, int indx) {
         if (indx >= str.length()) {
-            System.out.print(newString);
+            System.out.println(newString);
             for (int i = 0; i < countChar; i++) {
-                System.out.print(findChar);
+                // System.out.print(findChar);
+                newString += findChar;
             }
-            System.out.println(" and " + findChar + " found " + countChar + " times!");
+            System.out.println(newString + " and " + findChar + " found " + countChar + " times!");
             return;
         }
         if (findChar == str.charAt(indx)) {
