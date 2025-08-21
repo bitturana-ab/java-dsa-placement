@@ -8,6 +8,7 @@ public class RemoveDuplicates {
             System.out.println("Removed duplicates from " + str + " and new String is = " + newString);
             return;
         }
+        // 'b' - 'a' = 1
         if (AtoZ[str.charAt(indx) - 'a']) {
             removeDuplicates(str, indx + 1, newString);
         } else {
