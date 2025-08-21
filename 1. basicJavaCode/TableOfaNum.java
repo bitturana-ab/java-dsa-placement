@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-class table {
+class TableOfaNum {
 
     public static void main(String args[]) {
         System.out.print("Enter number: ");

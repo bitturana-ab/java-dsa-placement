@@ -1,5 +1,5 @@
 
-class marks {
+class Marks {
 
     public static void main(String args[]) {
         // define array

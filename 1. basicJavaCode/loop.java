@@ -1,5 +1,5 @@
 
-class loop {
+class Loop {
 
     public static void main(String args[]) {
         int i = 0;

@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-class factorial {
+class Factorial {
 
     public static void fact(int num) {
         if (num < 0) {  //no factorial for negative num 
@@ -12,7 +12,7 @@ class factorial {
         for (int i = 1; i <= num; i++) {
             factorial = factorial * i;
         }
-        System.out.print("Factorial is =" + factorial);
+        System.out.print("Factorial is = " + factorial);
         return;
     }
 

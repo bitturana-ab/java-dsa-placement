@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-class add {
+class Add {
 
     public static int addition() {
         Scanner sc = new Scanner(System.in);
