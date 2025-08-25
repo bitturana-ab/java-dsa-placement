@@ -1,7 +1,7 @@
 
 public class KeypadComninations {
 
-    private static String[] keypad = {".", " 1", "abc2", "def3", "ghi4", "jkl5", "mno6", "pqrs7", "tuv8", "wxyz9"};
+    private static final String[] keypad = {".", " 1", "abc2", "def3", "ghi4", "jkl5", "mno6", "pqrs7", "tuv8", "wxyz9"};
 
     private static void keypadCombinations(String str, int indx, String combination) {
         if (indx == str.length()) {

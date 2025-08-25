@@ -2,7 +2,7 @@
 public class RemoveDuplicates {
 
     // store true or false in 0 - 25 indices of array 
-    private static boolean[] AtoZ = new boolean[26];
+    private static final boolean[] AtoZ = new boolean[26];
 
     private static void removeDuplicates(String str, int indx, String newString) {
         if (indx >= str.length()) {
@@ -22,6 +22,7 @@ public class RemoveDuplicates {
     }
 
     public static void main(String[] args) {
+        // also u can use HashSet<Char> contains or add 
         removeDuplicates("abbcacjdajd", 0, "");
     }
 }
