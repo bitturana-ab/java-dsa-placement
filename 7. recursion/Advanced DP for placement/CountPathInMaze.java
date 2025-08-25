@@ -4,6 +4,7 @@
 public class CountPathInMaze {
 
     private static int countPath(int i, int j, int n, int m) {
+        // boundary cell so no any way
         if (i == n || j == m) {
             return 0;
         }
