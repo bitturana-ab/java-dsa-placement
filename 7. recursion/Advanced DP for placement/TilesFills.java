@@ -10,6 +10,7 @@ public class TilesFills {
         if (n < m) {
             return 1;
         }
+        // vertically and horizontaly arrangment
         return placeTiles(n - m, m) + placeTiles(n - 1, m);
     }
 
