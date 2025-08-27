@@ -1,8 +1,9 @@
 {
   "java.project.sourcePaths": [
+    "8. BackTracking",
     "7. recursion/Best problems",
     "7. recursion/Basic problems",
     "7. recursion/Advanced DP for placement",
-    "8. BackTracking"
+    "4. stringJavaCode"
   ]
 }
