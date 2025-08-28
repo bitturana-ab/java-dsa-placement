@@ -8,8 +8,8 @@ public class NQueenSafeChess {
         for (int row = 0; row < board.length; row++) {
             if (isSafe(row, col, board)) {
                 board[row][col] = 'Q';
-                Helper(board, allBoard, col+1);
-                board[row][col] ='.';
+                Helper(board, allBoard, col + 1);
+                board[row][col] = '.';
             }
         }
 
