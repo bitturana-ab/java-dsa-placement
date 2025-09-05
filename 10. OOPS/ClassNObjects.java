@@ -56,11 +56,11 @@ public class ClassNObjects {
         // System.out.println(copyMobile.price);
         System.out.print("");
 
-        // // compile time function/method overloding or plymorphism
-        m.printInfo();
-        m.printInfo("samsung");
-        m.printInfo(6797);
-        m.printInfo("apple", 120000);
-
+        // // compile time function/method overloading or plymorphism
+        // m.printInfo();
+        // m.printInfo("samsung");
+        // m.printInfo(6797);
+        // m.printInfo("apple", 120000);
+        System.out.print("");
     }
 }
