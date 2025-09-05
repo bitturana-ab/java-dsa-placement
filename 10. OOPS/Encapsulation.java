@@ -1,4 +1,5 @@
 
+// wrapping data and function/method in single unit
 class Account {
 
     public String name;
