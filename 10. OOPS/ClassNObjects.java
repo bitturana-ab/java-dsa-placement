@@ -8,6 +8,18 @@ class Mobile {
         System.out.println(name + " " + price);
     }
 
+    public void printInfo(String name) {
+        System.out.println(name);
+    }
+
+    public void printInfo(int price) {
+        System.out.println(price);
+    }
+
+    public void printInfo(String name, int price) {
+        System.out.println(name + " " + price);
+    }
+
     public Mobile() {
     }
 
@@ -34,12 +46,21 @@ public class ClassNObjects {
         // m.printInfo();
         // Mobile m1 = new Mobile("Samsung-a54", 45000);
 
-        // copy constructor
-        m.name = "samsung-a55";
-        m.price = 34000;
-        Mobile copyMobile = new Mobile(m);
-        System.out.println(copyMobile.name);
-        System.out.println(copyMobile.price);
+        System.out.print("");
+
+        // // copy constructor
+        // m.name = "samsung-a55";
+        // m.price = 34000;
+        // Mobile copyMobile = new Mobile(m);
+        // System.out.println(copyMobile.name);
+        // System.out.println(copyMobile.price);
+        System.out.print("");
+
+        // // compile time function/method overloding or plymorphism
+        m.printInfo();
+        m.printInfo("samsung");
+        m.printInfo(6797);
+        m.printInfo("apple", 120000);
 
     }
 }
