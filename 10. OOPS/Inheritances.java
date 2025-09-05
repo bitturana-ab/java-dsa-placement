@@ -12,10 +12,17 @@ class LivingThings {
         System.out.println("breating");
     }
 }
-// single level inheritance
-// child or sub class
 
-class Human extends LivingThings {
+// single level inheritance
+class Food extends LivingThings {
+
+    public void eat() {
+        System.out.println("eating food");
+    }
+}
+
+// multilevel inheritance
+class Human extends Food {
 
     public void walk() {
         System.out.println("walking");
@@ -30,6 +37,7 @@ public class Inheritances {
         h.breathing();
         h.name = "kumaar";
         h.printName();
+        h.eat();
 
     }
 }
