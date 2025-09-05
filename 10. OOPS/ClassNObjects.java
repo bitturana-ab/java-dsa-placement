@@ -8,8 +8,10 @@ class Mobile {
         System.out.println(name + " " + price);
     }
 
-    public Mobile() {
-        System.out.println("constructor called");
+    public Mobile(String name, int price) {
+        this.name = name;
+        this.price = price;
+        System.out.println(name + " " + price);
     }
 
 }
@@ -21,7 +23,7 @@ public class ClassNObjects {
         // m.name = "Samsung a54";
         // m.price = 45000;
         // m.printInfo();
-        Mobile m = new Mobile();
+        Mobile m = new Mobile("Samsung-a54", 45000);
 
     }
 }
