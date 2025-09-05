@@ -1,4 +1,5 @@
 
+// parent or base class
 class LivingThings {
 
     String name;
@@ -12,6 +13,7 @@ class LivingThings {
     }
 }
 
+// child or sub class
 class Human extends LivingThings {
 
     public void walk() {
