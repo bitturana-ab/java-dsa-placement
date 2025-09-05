@@ -12,8 +12,9 @@ class LivingThings {
         System.out.println("breating");
     }
 }
-
+// single level inheritance
 // child or sub class
+
 class Human extends LivingThings {
 
     public void walk() {
