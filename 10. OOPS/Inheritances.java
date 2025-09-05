@@ -20,6 +20,14 @@ class Food extends LivingThings {
         System.out.println("eating food");
     }
 }
+// hierarichial inheritance
+
+class Animal extends LivingThings {
+
+    public void bark() {
+        System.out.println("animal can bark");
+    }
+}
 
 // multilevel inheritance
 class Human extends Food {
@@ -32,12 +40,16 @@ class Human extends Food {
 public class Inheritances {
 
     public static void main(String[] args) {
-        Human h = new Human();
-        h.walk();
-        h.breathing();
-        h.name = "kumaar";
-        h.printName();
-        h.eat();
+        // Human h = new Human();
+        // h.walk();
+        // h.breathing();
+        // h.name = "kumaar";
+        // h.printName();
+        // h.eat();
+
+        Animal a = new Animal();
+        a.bark();
+        a.breathing();
 
     }
 }
