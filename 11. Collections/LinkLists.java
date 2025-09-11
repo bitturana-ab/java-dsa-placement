@@ -61,10 +61,37 @@ public class LinkLists {
         // System.out.println(currNode.data);
     }
 
+    // delete first or head node
+    public void deleteFirst() {
+        if (head == null) {
+            System.out.println("List is empty! || No any node to delete");
+            return;
+        }
+        // head shifted to next
+        head = head.next;
+    }
+
+    // delete last element 
+    public void deleteLast() {
+        if (head == null) {
+            System.out.println("No any node to delete!");
+            return;
+        }
+        Node currNode = head;
+        while (currNode.next.next != null) {
+            currNode = currNode.next;
+        }
+        currNode.next = null;
+    }
+
     public static void main(String[] args) {
         LinkLists list = new LinkLists();
         list.addFirst("J");
         list.addLast("D");
+        list.printList();
+        // list.deleteFirst();
+        list.printList();
+        list.deleteLast();
         list.printList();
     }
 }
