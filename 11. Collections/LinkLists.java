@@ -9,11 +9,16 @@ public class LinkLists {
         Node(String data) {
             this.data = data;
             this.next = null;
+            size++;
 
         }
     }
-
+    private int size;
     Node head;
+
+    public LinkLists() {
+        this.size = 0;
+    }
 
     // add - first/last 
     public void addFirst(String data) {
@@ -67,6 +72,7 @@ public class LinkLists {
             System.out.println("List is empty! || No any node to delete");
             return;
         }
+        size--;
         // head shifted to next
         head = head.next;
     }
@@ -77,11 +83,29 @@ public class LinkLists {
             System.out.println("No any node to delete!");
             return;
         }
-        Node currNode = head;
-        while (currNode.next.next != null) {
-            currNode = currNode.next;
+        size--;
+        // if only one element
+        if (head.next == null) {
+            head = null;
+            return;
         }
-        currNode.next = null;
+        // Node currNode = head;
+        // while (currNode.next.next != null) {
+        //     currNode = currNode.next;
+        // }
+        // currNode.next = null;
+        // another way 
+        Node secondLast = head;
+        Node lastNode = head.next;
+        while (lastNode.next != null) {
+            lastNode = lastNode.next;
+        }
+        secondLast.next = null;
+    }
+
+    // get size of linkedlist
+    public void printSize() {
+        System.out.println(size);
     }
 
     public static void main(String[] args) {
@@ -93,5 +117,6 @@ public class LinkLists {
         list.printList();
         list.deleteLast();
         list.printList();
+        list.printSize();
     }
 }
