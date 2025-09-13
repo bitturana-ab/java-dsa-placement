@@ -60,8 +60,6 @@ public class DeleteNthNodeFromLast {
             currNode = currNode.next;
         }
         System.out.println("null");
-        // if currNode.next != null
-        // System.out.println(currNode.data);
     }
 
     // delete first or head node
@@ -87,12 +85,6 @@ public class DeleteNthNodeFromLast {
             head = null;
             return;
         }
-        // Node currNode = head;
-        // while (currNode.next.next != null) {
-        //     currNode = currNode.next;
-        // }
-        // currNode.next = null;
-        // another way 
         Node secondLast = head;
         Node lastNode = head.next; // one node ahead
         while (lastNode.next != null) {
@@ -129,19 +121,5 @@ public class DeleteNthNodeFromLast {
         list.deleteNthNode(2);
 
         list.printList();
-
-        // more space will be use so avoid it
-        // LinkedList<String> list = new LinkedList<>();
-        // list.addFirst("This");
-        // list.add("is");
-        // list.add("a");
-        // list.add("list");
-        // System.out.println(list);
-        // space complexity -> O(n)
-        // LinkedList<String> reverseList = new LinkedList<>();
-        // for (int i = 0; i < list.size(); i++) {
-        //     reverseList.addFirst(list.get(i));
-        // }
-        // System.out.println(reverseList);
     }
 }
