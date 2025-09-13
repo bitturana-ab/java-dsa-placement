@@ -1,7 +1,5 @@
-// space complexity -> O(1)
-// time -> O(n)
 
-public class ReverseLinkedList {
+public class DeleteNthNodeFromLast {
 
     class Node {
 
@@ -17,7 +15,7 @@ public class ReverseLinkedList {
     private int size;
     Node head;
 
-    public ReverseLinkedList() {
+    public DeleteNthNodeFromLast() {
         this.size = 0;
     }
 
@@ -109,45 +107,27 @@ public class ReverseLinkedList {
         System.out.println(size);
     }
 
-    // for reverse linkedlist
-    public void reverseIterate() {
-        if (head == null || head.next == null) {
-            return;
+    // find nth position from last and delete
+    public void deleteNthNode(int n) {
+        int searchIndx = size - n;
+        Node pre = head;
+        int i = 1;
+        while (i < searchIndx) {
+            pre = pre.next;
+            i++;
         }
-        Node preNode = head;
-        Node currNode = head.next;
-        while (currNode != null) {
-            Node nextNode = currNode.next;
-            currNode.next = preNode;
-
-            // update
-            preNode = currNode;
-            currNode = nextNode;
-        }
-        head.next = null;
-        head = preNode;
-    }
-
-    // reverse linkedlist with recursion 
-    public Node reverseRecursive(Node head) {
-        if (head == null || head.next == null) {
-            return head;
-        }
-        Node newHead = reverseRecursive(head.next);
-        head.next.next = head;
-        head.next = null;
-        return newHead;
+        pre.next = pre.next.next;
     }
 
     public static void main(String[] args) {
-        ReverseLinkedList list = new ReverseLinkedList();
+        DeleteNthNodeFromLast list = new DeleteNthNodeFromLast();
         list.addFirst("First");
         list.addLast("Second");
         list.addLast("Third");
         list.printList();
-        // list.reverseIterate();
-        // list.printList();
-        list.head = list.reverseRecursive(list.head);
+        list.printSize();
+        list.deleteNthNode(2);
+
         list.printList();
 
         // more space will be use so avoid it
