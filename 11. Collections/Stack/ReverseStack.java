@@ -3,13 +3,26 @@ import java.util.Stack;
 
 public class ReverseStack {
 
+    private static void pushBottom(Stack<Integer> stack, int data) {
+        if (stack.isEmpty()) {
+            stack.push(data);
+            return;
+        }
+        int pop = stack.pop();
+        pushBottom(stack, data);
+        stack.push(pop);
+
+    }
+
     private static void reverseStack(Stack<Integer> s) {
         if (s.isEmpty()) {
             return;
         }
         int pop = s.pop();
         reverseStack(s);
-        s.addFirst(pop);
+        // push bottom or first
+        // s.addFirst(pop);
+        pushBottom(s, pop);
 
     }
 
