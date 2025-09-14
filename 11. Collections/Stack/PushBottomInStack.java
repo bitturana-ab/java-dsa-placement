@@ -3,13 +3,13 @@ import java.util.Stack;
 
 public class PushBottomInStack {
 
-    private static void pushBottom(Stack stack, int data) {
+    private static void pushBottom(Stack<Integer> stack, int data) {
         if (stack.isEmpty()) {
             stack.push(data);
             return;
         }
         // int peek = (Integer) stack.get(stack.size() - 1);
-        int pop = (Integer) stack.pop();
+        int pop = stack.pop();
         pushBottom(stack, data);
         stack.push(pop);
 
