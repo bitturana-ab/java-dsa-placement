@@ -15,14 +15,14 @@ public class StackClass {
 
     public static Node head;
 
-    public static boolean isImpty() {
+    public static boolean isEmpty() {
         return head == null;
     }
 
     // add at the top of the stack
     public static void push(int data) {
         Node newNode = new Node(data);
-        if (isImpty()) {
+        if (isEmpty()) {
             head = newNode;
             return;
         }
@@ -32,7 +32,7 @@ public class StackClass {
 
     // remove from top of the stack
     public static int pop() {
-        if (isImpty()) {
+        if (isEmpty()) {
             System.out.println("Stack is empty || underflow");
             return -1;
         }
@@ -44,7 +44,7 @@ public class StackClass {
 
     // peek the top element of the stack
     public static int peek() {
-        if (isImpty()) {
+        if (isEmpty()) {
             System.out.println("Stack is empty || underflow");
             return -1;
         }
@@ -59,7 +59,7 @@ public class StackClass {
         push(25);
         push(22);
 
-        while (!isImpty()) {
+        while (!isEmpty()) {
             System.out.println(peek());
             pop();
         }
