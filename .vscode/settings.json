@@ -8,8 +8,9 @@
     "5.1 bitManipulation",
     "5. operator_BinaryNumSys",
     "4. stringJavaCode",
+    "11. Collections/Stack",
     "10. OOPS",
-    "11. Collections/Stack"
+    "11. Collections/Queue"
   ],
   "java.debug.settings.onBuildFailureProceed": true
 }
