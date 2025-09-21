@@ -8,7 +8,7 @@ public class StackAraayList {
         ArrayList<Integer> stackList = new ArrayList<>();
 
         public boolean isEmpty() {
-            return stackList.size() == 0;
+            return stackList.isEmpty();
         }
 
         // push 
