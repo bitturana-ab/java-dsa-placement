@@ -5,12 +5,14 @@ public class PushBottomInStack {
 
     private static void pushBottom(Stack<Integer> stack, int data) {
         if (stack.isEmpty()) {
+            // now stack is empty so u can push here
             stack.push(data);
             return;
         }
         // int peek = (Integer) stack.get(stack.size() - 1);
         int pop = stack.pop();
         pushBottom(stack, data);
+        // now push into stack from stack variables
         stack.push(pop);
 
     }
